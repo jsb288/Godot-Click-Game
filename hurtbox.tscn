@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8xw1nsibbysl"]
+
+[ext_resource type="Texture2D" uid="uid://cgonqpqh3sq12" path="res://icon.svg" id="2_77r48"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1m8i5"]
+size = Vector2(100, 100)
+
+[node name="hurtbox" type="RigidBody2D"]
+collision_mask = 0
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1m8i5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0.101961, 0, 1)
+texture = ExtResource("2_77r48")
